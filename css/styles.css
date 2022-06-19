@@ -1,8 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-body {
+body,
+html {
     font-family: 'Inter', sans-serif;
     background-color: #141825;
+    
     color: white;
+    overflow-x: hidden;
+    margin: 0;
+}
+.container{
+    margin: 5px;
 }
 .typograph{
     font-size: 50px;
@@ -243,10 +250,15 @@ hr.jst:hover{
       
       justify-content: space-around;
     }
+    
   }
 @media only screen and (max-width: 500px){
+    .banner-big p{
+        text-align: center;       
+    }
     .top-nav{
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-around;
     }
     .cflex > div img{
         width: 120px;
@@ -255,6 +267,7 @@ hr.jst:hover{
     .top-nav a{
         text-align: center;
     }
+    
 }
 @media only screen and (max-width: 200px) {
     .cflex {
@@ -263,6 +276,7 @@ hr.jst:hover{
 
         
     }
+    
     
     .cflex > div {
         width: 93%;
@@ -282,4 +296,61 @@ hr.jst:hover{
         
         
     }
+}
+.banner-big{
+    height: 200px;
+    padding: 10px 12px;   
+    background-color: #ad323265;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.banner-big p{
+    opacity: 80%;
+    margin-left: 15px;
+    font-weight: bolder;
+    padding: 20px 20px;
+    font-size: 50px;
+    background-color: #141825;
+    border-radius: 10px 50px;
+    width: fit-content;
+    
+  
+    
+}
+footer {
+    font-size: 15px;
+    justify-self:center;
+   
+    display: flex;
+    flex-direction:row ;
+    font-size: 13px;
+ 
+   
+    color: white;
+    
+    text-align: left;
+    padding: 50px 10px;
+    margin-bottom:0;
+    
+   
+    
+    
+    border-top: solid #69656573 1px;
+    background-color: #1c2336;
+}
+footer > div{
+    margin: auto;
+    line-height: 70%;
+    
+}
+footer >  div h2 {
+        
+    
+    font-weight: bolder;
+    line-height: 10 0%;
+    color:#ad3232;
+
+    
 }
